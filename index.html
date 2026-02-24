@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JAYASHEELA  Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+
+<div class="nav-container">
+
+<div class="logo" data-aos="zoom-in">
+<span>JAYASHEELA S D</span>
+</div>
+
+<div class="links">
+
+<div class="link active" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a></div>
+<div class="link " data-aos="fade-up" data-aos-delay="200"><a href="about.html">About</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="400"><a href="services.html">Services</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+
+<div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+<a href="contact.html">Contact Us</a>
+</div>
+
+</div>
+
+<i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+</div>
+
+
+<!-- Mobile Menu -->
+<div class="dropdown">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+
+<i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+
+</div>
+
+</nav>
+
+
+<!-- Main Section -->
+<section>
+
+<div class="main-container">
+
+<!-- Image -->
+<div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+
+  <div class="blob"></div>
+
+  <img src="images/img.png" alt="Profile">
+
+
+</div>
+
+
+
+<!-- Content -->
+<div class="content">
+
+<h1 data-aos="fade-left">Hey! I'm <span>Jayasheela</span></h1>
+
+<div class="typewriter" data-aos="fade-right">
+ <span></span>
+</div>
+
+<p data-aos="fade-up" data-aos-delay="1000">
+Intern @ Datos Infotech Pvt. Ltd.
+MCA Graduate | AI & ML Learner | App Builder
+</p>
+
+<div class="social-links" data-aos="flip-down" data-aos-delay="1200">
+
+<!-- GitHub -->
+<a href="https://github.com/jayasheeladevaraju" target="_blank">
+  <i class="fa-brands fa-github"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/jayasheelasd/" target="_blank">
+  <i class="fa-brands fa-linkedin"></i>
+</a>
+
+<!-- Instagram -->
+<a href="https://www.instagram.com/jaya___gowda2002__/" target="_blank">
+  <i class="fa-brands fa-instagram"></i>
+</a>
+
+</div>
+
+
+<div class="btn" data-aos="zoom-out-left">
+  <a href="Jayasheela-resume.pdf" download>
+    <button>Download CV</button>
+  </a>
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({offset:0});
+</script>
+
+
+<!-- Menu JS -->
+<script>
+
+function hamburg(){
+const navbar = document.querySelector(".dropdown");
+navbar.style.transform = "translateX(0)";
+}
+
+function cancel(){
+const navbar = document.querySelector(".dropdown");
+navbar.style.transform = "translateX(100%)";
+}
+
+</script>
+
+</body>
+</html>

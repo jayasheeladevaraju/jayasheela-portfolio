@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services - Jayasheela S D</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+
+/* ===== SERVICES SECTION ===== */
+
+.services-section{
+width:100%;
+padding:30px 20px 60px;
+background:linear-gradient(to right,#fff,#fed7aa);
+display:flex;
+justify-content:center;
+}
+
+.services-container{
+width:100%;
+max-width:1100px;
+display:flex;
+flex-direction:column;
+gap:50px;
+}
+
+.services-title{
+font-size:2.8rem;
+color:rgb(109,67,0);
+text-align:center;
+font-weight:600;
+}
+
+/* Creative grid */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+/* Creative floating tiles */
+.service-card{
+background:rgba(255,255,255,0.65);
+backdrop-filter:blur(12px);
+padding:35px 25px;
+border-radius:26px;
+text-align:center;
+box-shadow:0 10px 30px rgba(109,67,0,0.18);
+transition:.45s;
+position:relative;
+overflow:hidden;
+}
+
+/* floating glow circle */
+.service-card::after{
+content:"";
+position:absolute;
+width:160px;
+height:160px;
+background:radial-gradient(circle,#f3c892,transparent);
+top:-40px;
+right:-40px;
+opacity:.6;
+}
+
+/* Hover animation */
+.service-card:hover{
+transform:translateY(-14px) rotate(-1deg) scale(1.04);
+box-shadow:0 35px 60px rgba(109,67,0,0.28);
+}
+
+/* icon circle */
+.service-card i{
+font-size:34px;
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:linear-gradient(to right,#c58b2c,#6d4300);
+color:white;
+margin:0 auto 18px;
+}
+
+/* heading */
+.service-card h2{
+font-size:1.3rem;
+margin-bottom:10px;
+color:#6d4300;
+}
+
+/* description */
+.service-card p{
+font-size:.95rem;
+line-height:1.6;
+}
+
+/* Mobile */
+@media(max-width:884px){
+    .services-section{
+
+padding:20px 20px 60px;
+
+    }
+    .service-card{
+
+padding:35px 25px;
+    }
+.services-grid{
+grid-template-columns:1fr;
+}
+.services-title{
+font-size:2rem;
+}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="nav-container">
+
+ <div class="logo" data-aos="zoom-in">
+<span>JAYASHEELA S D</span>
+</div>
+
+<div class="links">
+<div class="link"><a href="index.html">Home</a></div>
+<div class="link"><a href="about.html">About</a></div>
+<div class="link"><a href="skills.html">Skills</a></div>
+<div class="link active"><a href="services.html">Services</a></div>
+<div class="link"><a href="projects.html">Projects</a></div>
+
+<div class="link contact-btn">
+<a href="contact.html">Contact Us</a>
+</div>
+</div>
+
+<i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+</div>
+
+<div class="dropdown">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+<i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+</div>
+</nav>
+
+
+<!-- SERVICES -->
+<section class="services-section">
+
+<div class="services-container">
+
+<h1 class="services-title" data-aos="zoom-in">Services</h1>
+
+<div class="services-grid">
+
+<div class="service-card" data-aos="fade-right">
+<i class="fa-solid fa-mobile-screen"></i> <h2>Mobile App Development</h2>
+<p>Designing and building scalable Android and Flutter applications with clean UI, authentication systems and database integration.</p>
+</div>
+
+<div class="service-card" data-aos="fade-left">
+<i class="fa-solid fa-globe"></i> <h2>Web Application Development</h2>
+<p>Full-stack web application development using Java, Flask and modern frontend technologies with secure backend integration.</p>
+</div>
+
+<div class="service-card" data-aos="fade-right">
+<i class="fa-solid fa-brain"></i> <h2>AI & Research Support</h2>
+<p>Deep learning implementation, research assistance, dataset annotation, OCR, model training and Flask deployment solutions.</p>
+</div>
+
+<div class="service-card" data-aos="fade-left">
+<i class="fa-solid fa-laptop-code"></i> <h2> Freelance Development Projects</h2>
+<p>Custom freelance software projects including app development, backend systems, API integration and bug fixing services.</p>
+</div>
+
+<div class="service-card" data-aos="fade-right">
+<i class="fa-solid fa-pen-ruler"></i> <h2>UI/UX & Graphic Design</h2>
+<p>Creative UI/UX design, Canva marketing creatives, posters, banners and modern responsive interface layouts.</p>
+</div>
+
+<div class="service-card" data-aos="fade-left">
+<i class="fa-solid fa-file-lines"></i><h2> Documentation & Presentation</h2>
+<p>Professional technical documentation, project reports, research documentation, PPT creation and academic presentations.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({duration:1000, once:true});
+</script>
+
+<script>
+function hamburg(){
+document.querySelector(".dropdown").style.transform="translateX(0)";
+}
+function cancel(){
+document.querySelector(".dropdown").style.transform="translateX(100%)";
+}
+</script>
+
+</body>
+</html>

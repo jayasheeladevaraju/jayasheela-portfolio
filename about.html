@@ -1,0 +1,395 @@
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <title>About - Latha B</title>
+
+                    <!-- Google Font -->
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+                    <!-- Font Awesome -->
+                    <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                    <link rel="stylesheet" href="style.css">
+                    <!-- AOS -->
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+                    <style>
+                /* ===== About Page Main ===== */
+               .details-wrapper{
+    width:100%;
+    max-width:1100px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+
+          .about-section{
+    width:100%;
+    min-height:90vh;
+    background:linear-gradient(to right,#fff,#f7cfa3);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding:50px 15px 80px;   /* bottom space added */
+
+    gap:35px;
+}
+
+
+
+           .about-wrapper{
+    width:100%;
+    max-width:1100px;
+    display:flex;
+    gap:40px;
+    background:rgba(255,255,255,0.9);
+    border-radius:25px;
+    padding:35px 40px;   /* reduced */
+    box-shadow:0 15px 40px rgba(109,67,0,0.2);
+    
+}
+
+
+            /* Left Image */
+
+            .about-image{
+            width:30%;
+            display:flex;
+            justify-content:center;
+            align-items:flex-start;
+            }
+
+            .about-image img{
+            width:230px;
+            height:230px;
+            border-radius:50%;
+            object-fit:cover;
+            box-shadow:0 8px 20px rgba(109,67,0,0.25);
+            }
+
+            /* Right Content */
+
+            .about-content{
+            width:70%;
+            display:flex;
+            flex-direction:column;
+            gap:25px;
+            }
+
+            /* Main Heading */
+
+            .about-title{
+            font-size:2.5rem;
+            color:rgb(109,67,0);
+            margin-bottom:10px;
+            }
+
+            /* Info Card */
+
+            .info-card{
+            background:#fffaf2;
+            padding:20px 25px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+            line-height:1.7;
+            }
+
+            /* Section Headings */
+
+            .section-title{
+            font-size:1.4rem;
+            color:rgb(109,67,0);
+            border-left:4px solid rgb(109,67,0);
+            padding-left:12px;
+            }
+
+            /* Education Table */
+
+            .edu-table{
+            width:100%;
+            border-collapse:collapse;
+            background:#fffaf2;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+            }
+
+            .edu-table th,
+            .edu-table td{
+            padding:12px 15px;
+            text-align:left;
+            }
+
+            .edu-table th{
+            background:rgb(109,67,0);
+            color:white;
+            }
+
+            .edu-table tr:nth-child(even){
+            background:#fbe5c6;
+            }
+
+            /* Bullet Points */
+
+            .point-list{
+            list-style:none;
+            padding:0;
+            background:#fffaf2;
+            padding:18px 22px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+            }
+                .details-wrapper .point-list:last-of-type{
+        margin-bottom:60px;   /* space from bottom of screen */
+    }
+
+
+            .point-list li{
+            margin:12px 0;
+            padding-left:28px;
+            padding-bottom: 10px;
+            position:relative;
+            line-height:1.6;
+            }
+
+            .point-list li::before{
+            content:"⭐";
+            position:absolute;
+            left:0;
+            top:0;
+            }
+
+            /* ===== Mobile ===== */
+
+            @media(max-width:884px){
+               
+
+nav{
+position:sticky;
+top:0;
+z-index:999;
+background:linear-gradient(to right,#f5d1a6,#e6b980);
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+height:70px;
+padding:0 15px;
+justify-content:space-between;
+}
+
+.logo{
+font-size:1.7rem;
+}
+
+
+
+
+            .about-wrapper{
+            flex-direction:column;
+            padding:25px 20px;
+            gap:25px;
+            }
+
+            .about-image{
+            width:100%;
+            }
+
+            .about-image img{
+            width:160px;
+            height:160px;
+            }
+
+            .about-content{
+            width:100%;
+            }
+
+            .about-title{
+            text-align:center;
+            font-size:2rem;
+            }
+            .edu-table{
+                display:block;
+                width:100%;
+                overflow-x:auto;
+                margin-left:-5px;   /* moves table slightly left */
+            }
+
+            .edu-table th,
+            .edu-table td{
+                font-size:0.85rem;
+                padding:8px;
+                white-space:nowrap;
+            }
+
+
+            }
+            /* Space before Education section */
+
+            .edu-table{
+            margin-top:15px;
+            }
+
+            /* Separate Education from About card */
+
+            .section-title{
+            margin-top:25px;
+            }
+
+
+
+                    </style>
+
+                    </head>
+
+                    <body>
+
+                    <!-- Navbar (Same as Home) -->
+                <!-- Navbar -->
+            <nav>
+
+            <div class="nav-container">
+
+            <div class="logo" data-aos="zoom-in">
+            <span>JAYASHEELA S D</span>
+            </div>
+
+            <div class="links">
+
+           <div class="link" data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a></div>
+<div class="link active" data-aos="fade-up" data-aos-delay="200"><a href="about.html">About</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="400"><a href="services.html">Services</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+
+            <div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+            <a href="contact.html">Contact Us</a>
+            </div>
+
+            </div>
+
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="dropdown">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+
+            </div>
+
+            </nav>
+
+                    
+                
+
+
+                    <!-- About Section -->
+                   <section class="about-section">
+
+    <!-- ===== ABOUT CARD ONLY ===== -->
+    <div class="about-wrapper" data-aos="zoom-in">
+
+        <div class="about-image" data-aos="fade-right">
+            <img src="images/img.png" alt="Latha">
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+            <h1 class="about-title">About Me</h1>
+
+            <div class="info-card">
+                Motivated MCA graduate skilled in Java, Android, Flutter, and full-stack web development, 
+                with experience in database-driven applications and machine learning projects.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== OTHER SECTIONS OUTSIDE CARD ===== -->
+    <div class="details-wrapper">
+
+        <h2 class="section-title">Education</h2>
+        <table class="edu-table">
+            <tr>
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>CGPA</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>MCA</td>
+                <td>JSS Science & Technology University,Mysore</td>
+                <td>7.95</td>
+                <td>2023–2025</td>
+            </tr>
+            <tr>
+                <td>BCA</td>
+                <td>JSS College Of Arts ,Commerce & Science Ooty Road,Mysore </td>
+                <td>8.12</td>
+                <td>2020–2023</td>
+            </tr>
+        </table>
+
+        <h2 class="section-title">Internship</h2>
+        <ul class="point-list">
+            <li>Flutter Android App Developer Intern at Datos Infotech Pvt. Ltd.</li>
+            <li>Worked on full UI design and API integration.</li>
+            <li>Implemented login, registration, and image fetching APIs.</li>
+            <!--<li>Integrated push notifications.</li> -->
+            <li>Delivered project within 28 days.</li>
+        </ul>
+
+        <h2 class="section-title">Career Goals</h2>
+        <ul class="point-list">
+          <!-- <li>Become a skilled full-stack and mobile developer.</li> -->
+            <li>Develop efficient and user-friendly software applications.</li>
+            <li>Work in innovative technology-driven organizations.</li>
+            <li>Continuously enhance technical and problem-solving skills.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+
+                    <!-- AOS -->
+                    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                    AOS.init({
+                    offset: 0,
+                    duration: 1000,
+                    once: true
+                    });
+                    </script>
+                <script>
+
+                function hamburg(){
+                const navbar = document.querySelector(".dropdown");
+                navbar.style.transform = "translateX(0)";
+                }
+
+                function cancel(){
+                const navbar = document.querySelector(".dropdown");
+                navbar.style.transform = "translateX(100%)";
+                }
+
+                </script>
+
+
+                    </body>
+                    </html>

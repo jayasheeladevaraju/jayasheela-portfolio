@@ -1,0 +1,324 @@
+    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <title>About - Jayasheela S D</title>
+
+                    <!-- Google Font -->
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+                    <!-- Font Awesome -->
+                    <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+                    <link rel="stylesheet" href="style.css">
+                    <!-- AOS -->
+                    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                    </head>
+                      <body>
+
+                    <!-- Navbar (Same as Home) -->
+                <!-- Navbar -->
+           <nav>
+
+<div class="nav-container">
+
+<div class="logo" data-aos="zoom-in">
+<span>JAYASHEELA S D</span>
+</div>
+
+<div class="links">
+
+<div class="link " data-aos="fade-up" data-aos-delay="100"><a href="index.html">Home</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="200"><a href="about.html">About</a></div>
+<div class="link active" data-aos="fade-up" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="400"><a href="services.html">Services</a></div>
+<div class="link" data-aos="fade-up" data-aos-delay="500"><a href="projects.html">Projects</a></div>
+
+<div class="link contact-btn" data-aos="fade-up" data-aos-delay="600">
+<a href="contact.html">Contact Us</a>
+</div>
+
+</div>
+
+<i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+</div>
+
+
+<!-- Mobile Menu -->
+<div class="dropdown">
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+
+
+<i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+
+</div>
+
+</nav>
+
+
+    <section class="skills-section">
+
+    <div class="skills-container">
+
+    <h1 class="skills-main-title">Skills</h1>
+
+    <div class="skills-grid">
+
+    <!-- Web Development -->
+    
+    <div class="skill-card" data-aos="fade-right">
+    <h2><i class="fa-solid fa-code"></i> Web Development</h2>
+    <ul class="skill-list">
+<li>Proficient in Java and Python (Flask) for web application development.</li>
+<li>Frontend design using HTML, CSS and XML.</li>
+<li>Backend development using Java Servlets,PHP, JDBC and SQL database integration.</li>
+<li>Deployment using Flask and local servers.</li>
+</ul>
+    </div>
+
+
+    <!-- Quantum Computing -->
+<div class="skill-card" data-aos="fade-left">
+<h2><i class="fa-solid fa-atom"></i> Quantum Computing & QML</h2>
+<ul class="skill-list">
+<li>Worked on Quantum Support Vector Machine (QSVM) for lung cancer prognosis.</li>
+<li>Applied Quantum Kernel with ZZFeatureMap for high-dimensional medical data encoding.</li>
+<li>Implemented hybrid quantum-classical model using PCA and SVM integration.</li>
+<li>Basic understanding of qubits, superposition, entanglement and quantum feature mapping.</li>
+</ul>
+</div>
+
+    <!-- Android Development -->
+    
+    <div class="skill-card" data-aos="fade-left">
+    <h2><i class="fa-solid fa-mobile-screen"></i> Android Development</h2>
+    <ul class="skill-list">
+    <li>Application development using Java and XML in Android Studio.</li>
+    <li>Strong experience in UI design, authentication and database integration.</li>
+    <li>Cross-platform app development using Flutter with Dart.</li>
+    
+    </div>
+
+    <!-- Mavhine Learning -->
+    <div class="skill-card" data-aos="fade-right">
+    <h2><i class="fa-solid fa-brain"></i> Machine Learning</h2>
+   <ul class="skill-list">
+    <li>Experience in building image classification models using Support Vector Machine (SVM)</li>
+   <li> Applied feature extraction techniques for improving model performance</li>
+    <li>Hands-on work using Google Colab, Kaggle and Jupyter Notebook.</li>
+    
+    </div>
+
+    <!-- Tools -->
+    
+    <div class="skill-card" data-aos="fade-left">
+    <h2><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h2>
+
+    <ul class="skill-list">
+    <li>VS Code, Android Studio, Jupyter Notebook, Google Colab and Kaggle.</li>
+   <li> Canva and Adobe Illustrator for creative UI/UX design.</li>
+    <li>Flutter, pytorch, opencv</li>
+    </ul>
+    </div>
+
+    </div>
+
+    </div>
+
+    </section>
+    <style>
+        
+        
+        .skills-section{
+    margin-top:0;                 /* FIX */
+    width:100%;
+    padding:40px 20px 120px;      /* reduced top, increased bottom */
+    background:linear-gradient(to right,#fff,#fed7aa);
+    display:flex;
+    justify-content:center;
+}
+
+
+    .skills-container{
+    width:100%;
+    max-width:1100px;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    }
+
+    .skills-main-title{
+    font-size:2.6rem;
+    color:rgb(109,67,0);
+    text-align:center;
+    font-weight:600;
+    }
+
+    /* Grid */
+
+   .skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-bottom:40px;   /* space before screen bottom */
+}
+
+    /* Card */
+
+    .skill-card{
+        margin-top: 5px;
+    background:linear-gradient(180deg,#fffaf2,#fff);
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 12px 30px rgba(109,67,0,0.12);
+    transition:all .35s ease;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:40px; 
+    }
+
+    /* Top accent line */
+    .skill-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:6px;
+    background:linear-gradient(to right,#c58b2c,#6d4300);
+    }
+
+    /* Hover premium lift */
+    .skill-card:hover{
+transform:translateY(-12px) scale(1.025);
+box-shadow:0 30px 55px rgba(109,67,0,0.28);
+}
+
+
+    /* Title styling */
+    .skill-card h2{
+    color:rgb(109,67,0);
+    margin-bottom:14px;
+    font-size:1.45rem;
+    font-weight:600;
+    }
+
+    /* Text */
+    .skill-card p{
+    line-height:1.75;
+    font-size:0.96rem;
+    color:#333;
+    }
+
+    .skill-card h2 i{
+    margin-right:10px;
+    color:#c58b2c;
+    }
+    .skill-list{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+.skill-list li{
+position:relative;
+padding-left:28px;
+margin:12px 0;
+line-height:1.7;
+animation:fadeItem .6s ease forwards;
+opacity:0;
+}
+
+/* dark brown icon */
+.skill-list li::before{
+content:"◆";
+position:absolute;
+left:0;
+top:2px;
+color:#6d4300;
+font-size:14px;
+}
+
+
+/* stagger animation */
+.skill-list li:nth-child(1){animation-delay:.1s;}
+.skill-list li:nth-child(2){animation-delay:.2s;}
+.skill-list li:nth-child(3){animation-delay:.3s;}
+.skill-list li:nth-child(4){animation-delay:.4s;}
+
+@keyframes fadeItem{
+from{transform:translateY(12px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
+
+
+    /* Mobile */
+
+    @media(max-width:884px){
+        nav{
+position:sticky;
+top:0;
+z-index:999;
+background:linear-gradient(to right,#f5d1a6,#e6b980);
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav-container{
+height:70px;
+padding:0 15px;
+justify-content:space-between;
+}
+        .skills-section{
+            padding:20px 20px 20px;
+        }
+
+        .skills-container{
+            margin-top:0px;
+        }
+
+    .skills-grid{
+    grid-template-columns:1fr;
+    }
+
+    .skills-main-title{
+    font-size:2rem;
+    }
+    .logo{
+margin-left:40px;
+}
+
+    }
+
+    </style>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                    <script>
+                    AOS.init({
+                    offset: 0,
+                    duration: 1000,
+                    once: true
+                    });
+                    </script>
+                <script>
+
+                function hamburg(){
+                const navbar = document.querySelector(".dropdown");
+                navbar.style.transform = "translateX(0)";
+                }
+
+                function cancel(){
+                const navbar = document.querySelector(".dropdown");
+                navbar.style.transform = "translateX(100%)";
+                }
+
+                </script>
+                      </body></html>
